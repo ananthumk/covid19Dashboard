@@ -1,0 +1,45 @@
+.notfound-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e30;
+  height: 100vh;
+  font-family: 'Roboto';
+}
+
+.not-found-image {
+  width: 448px;
+  height: 300px;
+}
+
+.notfound-heading {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  color: #90a4ae;
+}
+
+.notfound-paragraph {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #78909c;
+}
+
+.home-btn {
+  width: 88px;
+  height: 48px;
+  border-radius: 12px;
+  background-color: #039be5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'inter';
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  border: 0px;
+  cursor: pointer;
+}

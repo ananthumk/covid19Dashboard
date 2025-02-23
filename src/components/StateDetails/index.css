@@ -1,0 +1,423 @@
+.state-details-container {
+  height: 100vh;
+  padding: 10px 0px 10px 0px;
+  overflow: auto;
+  font-family: 'Roboto';
+  display: flex;
+  flex-direction: column;
+}
+
+.state-details-section-page {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.state-image-container {
+  align-self: center;
+  width: 70%;
+  margin: 10px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: space-evenly;
+}
+
+.stateImages {
+  width: 412px;
+  height: 468px;
+  top: 604px;
+  left: 264px;
+}
+
+.state-ncp-details {
+  align-items: center;
+  margin-left: 200px;
+  margin-top: 100px;
+  width: 394px;
+  height: 252px;
+  top: 712px;
+  left: 858px;
+}
+
+.ncp-title {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #94a3b8;
+}
+
+.ncp-subhead {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.spdark {
+  color: #f1f5f9;
+}
+
+.splight {
+  color: #000;
+}
+
+.ncp-details {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #94a3b8;
+}
+
+.loading-container {
+  align-self: center;
+  margin: 20%;
+}
+
+.state-name-container {
+  width: 312px;
+  height: 64px;
+
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sndark {
+  background-color: #add8e6;
+  color: #1eb1fc;
+}
+
+.snlight {
+  background-color: #1c1c2b;
+  color: white;
+}
+
+.state-name-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 1055px;
+  height: 232px;
+  align-self: center;
+}
+
+.state-nameNupdate-section {
+  align-self: center;
+  margin-left: 20px;
+}
+
+.state-name-heading {
+  font-weight: 600;
+  font-family: 'HK Grotesk';
+  font-size: 20px;
+  line-height: 28px;
+
+  width: 231px;
+}
+
+.state-updated-paragraph {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+.text-dark {
+  color: #cbd5e1;
+}
+
+.text-light {
+  color: black;
+}
+
+.state-tested-details {
+  width: 200px;
+  margin-right: 14px;
+  align-self: center;
+}
+
+.tested-heading {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Roboto';
+  font-weight: 500;
+
+  margin-left: 20px;
+}
+
+.sd-dark {
+  color: #94a3b8;
+}
+
+sd-light {
+  color: #000;
+}
+
+.tested-number {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: 'Roboto';
+  color: #94a3b8;
+}
+
+.state-stats-container {
+  width: 1055px;
+  height: 232px;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  margin: 10px;
+}
+
+.state-stats-btn {
+  width: 264px;
+  height: 232px;
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 12px;
+  list-style-type: none;
+}
+
+.state-stats-confirmed {
+  color: #ff073a;
+}
+
+.state-stats-active {
+  color: #007bff;
+}
+
+.state-stats-recovered {
+  color: #28a745;
+}
+
+.state-stats-deceased {
+  color: #6c757d;
+}
+
+.button-stats-paragraph {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.button-stats-image {
+  width: 38px;
+  height: 38px;
+}
+
+.button-stats-number {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.top-district-heading {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  width: 1055px;
+  height: 70px;
+  align-self: center;
+  margin: 10px;
+}
+
+.top-district-list {
+  width: 1055px;
+  min-height: 130px;
+  height: 263px;
+  max-height: 600px;
+  align-self: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 10px;
+  line-height: 24px;
+}
+
+.district-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #94a3b8;
+}
+
+.district-details {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.cases-count-districts {
+  font-size: 24px;
+  line-height: 28.13px;
+  font-weight: 500;
+}
+
+.districts-name {
+  font-size: 16px;
+  line-height: 18.75px;
+  margin-left: 8px;
+}
+
+.state-confirmed-active {
+  background-color: #331427;
+}
+
+.state-active-active {
+  background-color: #132240;
+}
+
+.state-recovered-active {
+  background-color: #182829;
+}
+
+.state-deceased-active {
+  background-color: #1c1c2b;
+}
+
+.failure-head {
+  font-size: 24px;
+  font-family: 600;
+  color: white;
+}
+
+.retrybtn {
+  font-size: 15px;
+  font-weight: 500;
+  background-color: rgb(79, 79, 158);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 37px;
+}
+
+@media screen and (max-width: 576px) {
+  .state-details-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .loading-container,
+  failure-container {
+    align-self: center;
+  }
+  .retrybtn {
+    font-size: 10px;
+    width: 70px;
+    height: 30px;
+  }
+  .state-stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 350px;
+    height: 400px;
+  }
+  .state-stats-btn {
+    width: 150px;
+    height: 150px;
+  }
+  .state-nameNupdate-section {
+    margin-left: 5px;
+  }
+  .state-name-section {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .state-name-container {
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
+  .state-name-heading {
+    font-size: 15px;
+  }
+  .state-updated-paragraph {
+    font-size: 14px;
+    width: 230px;
+  }
+  .state-tested-details {
+    margin-bottom: 10px;
+    width: 100px;
+    align-self: center;
+  }
+  .tested-heading {
+    font-size: 17px;
+  }
+  .tested-number {
+    font-size: 15px;
+  }
+  .top-district-list {
+    width: 340px;
+    align-self: center;
+    height: 500px;
+  }
+  .district-container {
+    width: 140px;
+  }
+  .district-details {
+    margin: 4px;
+    align-self: center;
+  }
+  .cases-count-districts {
+    font-size: 13px;
+  }
+  .districts-name {
+    font-size: 13px;
+  }
+  .top-district-heading {
+    font-size: 20px;
+    width: 340px;
+    align-self: center;
+    margin-bottom: 0px;
+  }
+  .state-image-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  .state-ncp-details {
+    margin-left: 10px;
+    height: 100px;
+    margin: 30px;
+  }
+  .ncp-details-container {
+    display: flex;
+    width: 35%;
+    justify-content: space-evenly;
+  }
+  .stateImages {
+    width: 296px;
+    height: 329px;
+  }
+  .ncp-title {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .ncp-subhead {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .ncp-details {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

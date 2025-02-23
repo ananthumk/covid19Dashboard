@@ -1,0 +1,122 @@
+.vaccine-page-container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto';
+}
+
+.vaccination-container-bgdark {
+  background-color: #161625;
+}
+
+.vaccination-container-bg {
+  background-color: #ffffff;
+}
+.vaccine-containers {
+  align-self: center;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.select-state-container {
+  width: 50%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.home-icon {
+  width: 32px;
+  height: 32px;
+  align-self: center;
+  margin-right: 12px;
+}
+
+.icon-dark {
+  color: #cbd5e1;
+}
+
+.icon-light {
+  color: #000;
+}
+
+.stateName {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 500;
+}
+
+.dropdown-container {
+  display: flex;
+  width: 450px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: flex-end;
+  margin-top: 10px;
+}
+
+.dropdown {
+  width: 200px;
+  height: 40px;
+  background-color: #05073cf8;
+  color: #a3b5c6;
+  font-size: 12px;
+  font-family: 600;
+  outline: none;
+  border-radius: 7px;
+  border: none;
+}
+
+.dropdown .select__control {
+  background-color: #05073cf8 !important;
+  color: white !important;
+}
+
+.select__single-value {
+  color: #a3b5c6 !important;
+}
+
+.select__option {
+  color: white !important;
+  background-color: #05073cf8 !important;
+}
+
+.options {
+  font-size: 12px;
+  background-color: #8d9ead50;
+  color: #a3b5c6;
+}
+
+.options::hover {
+  color: red;
+}
+
+@media screen and (max-width: 576px) {
+  .vaccine-page-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .home-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .stateName {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .select-state-container {
+    width: 100%;
+  }
+  .dropdown {
+    width: 108px;
+    height: 30px;
+    font-size: 10px;
+  }
+  .dropdown-container {
+    width: 80%;
+    align-self: flex-start;
+    margin-top: 5px;
+  }
+}

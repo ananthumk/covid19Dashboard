@@ -1,0 +1,379 @@
+.home-page-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.page-container-dark {
+  background-color: #161625;
+}
+.page-container-light {
+  background-color: #fff;
+}
+.btn-1 {
+  background-color: transparent;
+  border: 0px;
+}
+.input-container {
+  align-self: center;
+  width: 824px;
+  height: 72px;
+  background-color: #bebfc214;
+  box-shadow: 0% 8% #171f4614;
+  filter: blur(0px);
+  padding: 10px;
+  display: flex;
+  top: 144px;
+  margin-top: 23px;
+  left: 308px;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.search-input-icon {
+  width: 24px;
+  height: 24px;
+  color: #94a3b8;
+  background-color: transparent;
+  border: 0px;
+}
+
+.search-input {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  margin-left: 10px;
+  width: 100%;
+  color: #94a3b8;
+  outline: none;
+  background-color: transparent;
+  border: 0px;
+}
+
+.searchs {
+  width: 824px;
+  min-height: 256px;
+  max-height: 800px;
+  overflow: auto;
+  align-self: center;
+  margin: 10px 0px 10px 0px;
+}
+
+.route-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.state-list-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.state-list-name {
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #64748b;
+}
+
+.state-list-btn {
+  background-color: #1cd4d429;
+  width: 60px;
+  margin-right: 5px;
+  height: 32px;
+  border-radius: 4px;
+  display: flex;
+  align-self: center;
+  cursor: pointer;
+}
+
+.state-code {
+  color: #facc15;
+  font-family: 'HK Grotesk';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  align-self: center;
+}
+
+.state-arrow {
+  width: 20px;
+  height: 20px;
+  color: #facc15;
+  margin-left: 4px;
+  align-self: center;
+}
+
+.CovidTable {
+  margin-top: 40px;
+  width: 1186px;
+  border-radius: 5px;
+}
+
+.CovidTable-dark {
+  background-color: #161625;
+  border: 1px solid #bebcbc;
+}
+
+.CovidTable-light {
+  background-color: #bebcbc;
+  border: 1px solid #161625;
+}
+
+.covHeading-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  align-self: center;
+
+  padding: 5px;
+  border-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.mobile-covHeading-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1146px;
+  align-self: center;
+  padding: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.state-stats-list {
+  list-style-type: none;
+}
+
+.tables-list {
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  text-align: right;
+  align-self: center;
+  color: #ffffff;
+  list-style-type: none;
+  width: 12%;
+  margin: 0px 8px 0px 6px;
+}
+.tables-lists {
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  align-self: center;
+  list-style-type: none;
+  width: 10%;
+  margin: 0px 8px 0px 6px;
+}
+
+.states {
+  display: flex;
+}
+
+.items-in-column {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f8fafc;
+}
+
+.generic-state {
+  width: 30px;
+  height: 30px;
+  color: #565657;
+  padding-left: 6px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.seperator {
+  width: 100%;
+  font-size: 10px;
+}
+
+.dark-b {
+  color: #1e1e30;
+}
+.light-b {
+  color: #94a3b8;
+}
+
+.tconfirmed {
+  color: #ff073a;
+}
+
+.tactive {
+  color: #007bff;
+}
+
+.trecovered {
+  color: #28a745;
+}
+
+.loader {
+  align-self: center;
+  margin-top: 5%;
+}
+
+.sccess-section {
+  align-self: center;
+  margin-top: 10px;
+}
+
+.tabList-container {
+  width: 979px;
+  height: 142px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-self: center;
+  margin: 10px;
+  margin-left: 6%;
+}
+
+.tabItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabh {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+
+.total-count {
+  font-size: 24px;
+  line-height: 24px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+
+.confirm {
+  color: #ff073a;
+}
+
+.active {
+  color: #007bff;
+}
+
+.recovered {
+  color: #28a745;
+}
+
+.decease {
+  color: #6c757d;
+}
+
+.tab-image {
+  width: 48px;
+  height: 48px;
+}
+
+@media screen and (max-width: 576px) {
+  .home-page-container {
+    width: 100%;
+    padding: 0 16px;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .input-container {
+    width: 312px;
+    height: 48px;
+  }
+  .search-input-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .search-input {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .tabList-container {
+    width: 100%;
+    padding: 16px 8px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 16px auto;
+    height: 300px;
+  }
+  .tabh {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .tab-image {
+    width: 24px;
+    height: 24px;
+  }
+  .total-count {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .home-page-container {
+    width: 360px;
+  }
+  .searchs {
+    width: 310px;
+    min-height: 120px;
+    max-height: 320px;
+  }
+  .state-list-name {
+    font-size: 13px;
+  }
+  .state-list-btn {
+    width: 50px;
+    height: 30px;
+  }
+  .state-code {
+    font-size: 12px;
+  }
+  .state-arrow {
+    width: 18px;
+    height: 18px;
+  }
+  .mobile-covHeading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .covHeading-container {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .CovidTable {
+    width: 312px;
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tables-lists {
+    width: 70%;
+    margin: 4px 0px 4px 0px;
+    font-size: 18px;
+  }
+  .tables-list {
+    margin: 4px 0px 4px 0px;
+  }
+}
