@@ -6,17 +6,10 @@ import StateItem from '../../context/StateItem'
 
 import './index.css'
 
-const apiStatusConstants = {
-  initial: 'INITIAL',
-  loading: 'LOADING',
-  success: 'SUCCESS',
-  failure: 'FAILURE',
-}
-
 class About extends Component {
   state = {
     isloading: true,
-    apiStatus: apiStatusConstants.initial,
+
     aboutDetails: [],
   }
 
@@ -25,7 +18,6 @@ class About extends Component {
   }
 
   fetchAboutApi = async () => {
-    this.setState({apiStatusL: apiStatusConstants.loading})
     const url = 'https://apis.ccbp.in/covid19-faqs'
     const response = await fetch(url)
 
@@ -46,7 +38,7 @@ class About extends Component {
 
   render() {
     const {aboutDetails, isloading} = this.state
-    console.log(aboutDetails)
+
     const {isDark} = this.context
     return (
       <div

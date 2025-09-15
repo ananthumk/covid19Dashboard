@@ -262,7 +262,7 @@ export default class Home extends Component {
   }
 
   renderSearchItem = () => {
-    const {searchInputs, showSearchResult} = this.state
+    const {searchInputs} = this.state
 
     const filteredStateList =
       searchInputs.length === 0
@@ -358,7 +358,7 @@ export default class Home extends Component {
           className="each-state-details-list"
         >
           {filteredTableList.map(eachItem => (
-            <li className="state-stats-list" key={eachItem.stateCode}>
+            <div className="state-stats-list" key={eachItem.stateCode}>
               <Link to={`/state/${eachItem.stateCode}`} className="route-link">
                 <div
                   key={eachItem.stateCode}
@@ -372,7 +372,7 @@ export default class Home extends Component {
                   <p className="tables-list">{eachItem.population}</p>
                 </div>
               </Link>
-            </li>
+            </div>
           ))}
         </ul>
       </div>
@@ -435,34 +435,36 @@ export default class Home extends Component {
     const {isDark} = this.context
 
     return (
-      <div
-        className={`home-page-container ${
-          isDark ? 'page-container-dark' : 'page-container-light'
-        } `}
-      >
-        <Header />
-        <div className="input-container">
-          <BsSearch className="search-input-icon" />
-          <input
-            type="search"
-            className="search-input"
-            onChange={this.onChangeStateSearch}
-            placeholder="Enter the State"
-            value={searchInputs}
-          />
-        </div>
+      <>
+        <div
+          className={`home-page-container ${
+            isDark ? 'page-container-dark' : 'page-container-light'
+          } `}
+        >
+          <Header />
+          <div className="input-container">
+            <BsSearch className="search-input-icon" />
+            <input
+              type="search"
+              className="search-input"
+              onChange={this.onChangeStateSearch}
+              placeholder="Enter the State"
+              value={searchInputs}
+            />
+          </div>
 
-        {(() => {
-          if (isLoading) {
-            return this.renderLoader()
-          }
-          if (showSearchResult) {
-            return this.renderSearchItem()
-          }
-          return <div className="sccess-section">{this.renderSuccess()}</div>
-        })()}
-        <Footer />
-      </div>
+          {(() => {
+            if (isLoading) {
+              return this.renderLoader()
+            }
+            if (showSearchResult) {
+              return this.renderSearchItem()
+            }
+            return <div className="sccess-section">{this.renderSuccess()}</div>
+          })()}
+        </div>
+        {!isLoading && <Footer className="home-footer" />}
+      </>
     )
   }
 }

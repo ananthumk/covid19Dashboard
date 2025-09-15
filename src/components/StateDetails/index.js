@@ -252,7 +252,7 @@ export default class StateDetails extends Component {
   }
 
   renderLoadingView = () => (
-    <div className="loading-container" testid="stateDetailsLoader">
+    <div className="loader" testid="stateDetailsLoader">
       <Loader color="#3276e3" type="TailSpin" width={50} height={50} />
     </div>
   )
@@ -282,7 +282,7 @@ export default class StateDetails extends Component {
       activeCasesCount,
       deceasedCasesCount,
       recoveredCasesCount,
-      districtsList,
+
       population,
     } = stateDetails
 
@@ -362,7 +362,7 @@ export default class StateDetails extends Component {
             <p className={`tested-heading ${isDark ? 'sd-dark' : 'sd-light'}`}>
               Tested
             </p>
-            <p className="tested-number textColor">{tested}</p>
+            <p className={`tested-number ${textColor}`}>{tested}</p>
           </div>
         </div>
         <div className="state-stats-container">
@@ -452,7 +452,10 @@ export default class StateDetails extends Component {
           {apiStatus === apiStatusConstants.loading && this.renderLoadingView()}
           {apiStatus === apiStatusConstants.success && this.renderSuccessView()}
           {apiStatus === apiStatusConstants.failure && this.renderFailureView()}
-          <Footer />
+          {(apiStatus === apiStatusConstants.success ||
+            apiStatus === apiStatusConstants.failure) && (
+            <Footer className="stateSpecific-footer" />
+          )}
         </div>
       </>
     )

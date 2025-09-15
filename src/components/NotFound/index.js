@@ -13,7 +13,9 @@ const NotFound = () => (
       we are sorry, the page you requested could not be found
     </p>
     <Link to="/" className="link-container">
-      <button className="home-btn">Home</button>
+      <button type="button" className="home-btn">
+        Home
+      </button>
     </Link>
   </div>
 )

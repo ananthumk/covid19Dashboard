@@ -1,7 +1,9 @@
 .stateSpecific-timeline-container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   margin-top: 20px;
+  min-height: 400px;
 }
 
 .timeline-container {
@@ -81,7 +83,18 @@
   padding: 15px;
 }
 
+.loading {
+  margin-top: 10%;
+  align-self: center;
+}
+
 @media screen and (max-width: 576px) {
+  .loading {
+    margin-top: 40%;
+  }
+  .stateSpecific-timeline-container {
+    margin-top: 10px;
+  }
   .line-chart {
     width: 100%;
     max-width: 370px;

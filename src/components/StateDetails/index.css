@@ -1,10 +1,11 @@
 .state-details-container {
   height: 100vh;
-  padding: 10px 0px 10px 0px;
-  overflow: auto;
+  padding-top: 10px;
+  overflow-y: auto;
   font-family: 'Roboto';
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .state-details-section-page {
@@ -15,18 +16,18 @@
 
 .state-image-container {
   align-self: center;
-  width: 70%;
+  width: 100%;
+  max-width: 70%;
   margin: 10px;
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
   flex-direction: space-evenly;
 }
 
 .stateImages {
-  width: 412px;
-  height: 468px;
-  top: 604px;
-  left: 264px;
+  width: 40%;
+  max-height: 450px;
+  height: auto;
 }
 
 .state-ncp-details {
@@ -96,7 +97,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  width: 1055px;
+  width: 80%;
   height: 232px;
   align-self: center;
 }
@@ -162,7 +163,7 @@ sd-light {
 }
 
 .state-stats-container {
-  width: 1055px;
+  width: 80%;
   height: 232px;
   align-self: center;
   display: flex;
@@ -223,20 +224,19 @@ sd-light {
   font-size: 32px;
   font-weight: 500;
   line-height: 48px;
-  width: 1055px;
   height: 70px;
-  align-self: center;
-  margin: 10px;
+  margin: 20px;
+  padding-left: 10%;
 }
 
 .top-district-list {
-  width: 1055px;
-  min-height: 130px;
-  height: 263px;
-  max-height: 600px;
+  width: 80%;
+  min-height: 100px;
+  max-height: 800px;
+  overflow-y: auto;
   align-self: center;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: 10px;
   line-height: 24px;
@@ -303,11 +303,42 @@ sd-light {
   height: 37px;
 }
 
+.stateSpecific-footer {
+  align-self: flex-end;
+}
+
+@media (max-width: 720px) {
+  .state-name-section {
+    width: 80%;
+    margin: 10px 0;
+  }
+  .state-tested-details {
+    margin: 0;
+    text-align: end;
+  }
+  .state-stats-btn {
+    height: 180px;
+  }
+  .stateImages {
+    height: 280px;
+    align-self: center;
+  }
+  .state-ncp-details {
+    align-self: center;
+  }
+  .ncp-title {
+    font-size: 18px;
+    width: 120px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .state-details-container {
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
   }
   .loading-container,
   failure-container {
@@ -322,7 +353,7 @@ sd-light {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 350px;
+    width: 100%;
     height: 400px;
   }
   .state-stats-btn {
@@ -333,7 +364,7 @@ sd-light {
     margin-left: 5px;
   }
   .state-name-section {
-    width: 100%;
+    width: 90%;
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -348,7 +379,9 @@ sd-light {
     align-self: center;
   }
   .state-name-heading {
-    font-size: 15px;
+    font-size: 12px;
+    width: 90%;
+    padding: 4px;
   }
   .state-updated-paragraph {
     font-size: 14px;
@@ -364,30 +397,39 @@ sd-light {
   }
   .tested-number {
     font-size: 15px;
+    margin-left: 20px;
   }
   .top-district-list {
-    width: 340px;
+    width: 100%;
     align-self: center;
-    height: 500px;
+    min-height: 120px;
+    max-height: 500px;
   }
   .district-container {
-    width: 140px;
+    width: 40%;
+    margin-right: 5px;
   }
   .district-details {
     margin: 4px;
+    flex-wrap: wrap;
+    width: 80px;
+
     align-self: center;
   }
   .cases-count-districts {
-    font-size: 13px;
+    font-size: 14px;
   }
   .districts-name {
     font-size: 13px;
+    flex-wrap: wrap;
+    width: 20px;
   }
   .top-district-heading {
     font-size: 20px;
-    width: 340px;
+    width: 80%;
     align-self: center;
     margin-bottom: 0px;
+    padding-left: 0;
   }
   .state-image-container {
     display: flex;
@@ -401,16 +443,18 @@ sd-light {
   }
   .ncp-details-container {
     display: flex;
-    width: 35%;
+    width: 45%;
     justify-content: space-evenly;
+    margin-left: 0px;
   }
   .stateImages {
-    width: 296px;
+    width: 100%;
     height: 329px;
   }
   .ncp-title {
     font-size: 14px;
     line-height: 24px;
+    padding-left: 20px;
   }
   .ncp-subhead {
     font-size: 12px;

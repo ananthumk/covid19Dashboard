@@ -14,7 +14,6 @@ class Vaccination extends Component {
     currentState: '',
     currentDistrict: '',
     isLoading: true,
-    error: null,
     vaccinationData: null,
     activeTab: 'doses',
   }
@@ -28,8 +27,10 @@ class Vaccination extends Component {
 
     const url = 'https://apis.ccbp.in/covid19-state-ids'
     const responseData = await fetch(url)
+    
     if (responseData.ok) {
       const fetchData = await responseData.json()
+      console.log('datA: ', fetchData)
       const stateUpdatedData = fetchData.states.map(eachState => ({
         value: eachState.state_id,
         label: eachState.state_name,
@@ -53,6 +54,7 @@ class Vaccination extends Component {
     const response = await fetch(url)
     if (response.ok) {
       const districtFetchedData = await response.json()
+      console.log('stateData', districtFetchedData)
       const districtUpdatedData = districtFetchedData.districts.map(
         eachDistrict => ({
           value: eachDistrict.district_id,
@@ -68,10 +70,10 @@ class Vaccination extends Component {
     }
   }
 
-  fetchVaccinationDetails = async stateId => {
+  fetchVaccinationDetails = async () => {
     const url = `https://apis.ccbp.in/covid19-vaccination-data/`
     const response = await fetch(url)
-
+    console.log(response)
     /* if (response.ok) {
       const data = await response.json()
       console.log(data)
@@ -247,14 +249,7 @@ class Vaccination extends Component {
   }
 
   renderSuccessView = () => {
-    const {
-      states,
-      districts,
-      currentState,
-      currentDistrict,
-      isLoading,
-      error,
-    } = this.state
+    const {states, districts, currentState, currentDistrict} = this.state
     const selectedState = states.find(state => state.value === currentState)
     const selectedDistrict = districts.find(
       district => district.value === currentDistrict,

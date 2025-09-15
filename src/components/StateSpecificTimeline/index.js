@@ -95,7 +95,7 @@ export default class StateSpecificTimeline extends Component {
   }
 
   renderLoadingView = () => (
-    <div className="loading-container" testid="timelinesDataLoader">
+    <div className="loading" testid="timelinesDataLoader">
       <Loader color="#3276e3" type="TailSpin" width={50} height={50} />
     </div>
   )
