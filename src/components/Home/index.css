@@ -330,6 +330,8 @@
   .input-container {
     width: 70%;
   }
+  .searchs{
+    width:70%;
 }
 
 @media screen and (max-width: 720px) {
@@ -340,7 +342,7 @@
     flex-direction: column;
   }
   .input-container {
-    width: 70%;
+    
     height: 48px;
   }
   .search-input-icon {
@@ -373,7 +375,7 @@
     line-height: 24px;
   }
   .searchs {
-    width: 100%;
+   
     min-height: 120px;
     max-height: 320px;
   }
